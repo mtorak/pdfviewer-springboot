@@ -22,7 +22,7 @@ public class DefaultController {
 
   @GetMapping("preview")
   public void preview(HttpServletRequest request, HttpServletResponse response) throws FileNotFoundException {
-//    File file = new File("/home/bentegopersonel/diyasor_workspace/uploaded-engine/9/e95433e8-fb08-4c63-ba57-70331903562f.pdf");
+//    File file = new File("/home/<username>/e95433e8-fb08-4c63-ba57-70331903562f.pdf");
     File file = ResourceUtils.getFile("classpath:doc/Adam Boduch_ Roy Derks - React and React Native_ "
         + "A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition (2020, Packt Publishing Ltd).pdf");
     if (file.exists()) {
